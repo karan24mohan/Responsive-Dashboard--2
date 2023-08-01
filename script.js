@@ -39,12 +39,12 @@ searchBtn.addEventListener("click", function (e) {
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < "768px") {
     sideBar.classList.add("close");
   } else {
     sideBar.classList.remove("close");
   }
-  if (window.innerWidth > 576) {
+  if (window.innerWidth > "576px") {
     searchBtnIcon.classList.replace("bx-x", "bx-search");
     searchForm.classList.remove("show");
   }
