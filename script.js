@@ -38,7 +38,9 @@ searchBtn.addEventListener("click", function (e) {
   }
 });
 
-window.addEventListener("resize", () => {
+window.addEventListener("resize", setSize);
+
+function setSize() {
   if (window.innerWidth < 768) {
     sideBar.classList.add("close");
   } else {
@@ -48,7 +50,7 @@ window.addEventListener("resize", () => {
     searchBtnIcon.classList.replace("bx-x", "bx-search");
     searchForm.classList.remove("show");
   }
-});
+}
 
 const toggler = document.getElementById("toggle-theme");
 
